@@ -1,0 +1,48 @@
+.page-intro {
+  width: auto;
+  margin: 0;
+  padding: 71px 0;
+  padding-bottom: 76px;
+  font-size: 27px;
+  line-height: 30px;
+  color: #000000;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-intro {
+    position: relative;
+    padding-top: 95px;
+    padding-bottom: 93px;
+    font-size: 43px;
+    line-height: 50px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: auto 24px;
+      background-position: 0 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-intro {
+    padding-top: 93px;
+    padding-bottom: 122px;
+    font-size: 53px;
+    line-height: 57px;
+
+    &::after {
+      height: 34px;
+      background-size: auto 34px;
+    }
+  }
+}
