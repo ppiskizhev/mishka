@@ -1,0 +1,186 @@
+.promo {
+  width: auto;
+  padding-top: 70px;
+  background-color: $cream;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% -18px;
+  background-size: 575px auto;
+  @media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+  }
+}
+
+.promo__title {
+  max-width: 260px;
+  margin: 0 auto;
+  margin-bottom: 124px;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+
+  user-select: none;
+}
+
+.promo__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo__link {
+  position: relative;
+  width: 100%;
+  padding: 26px 30px;
+  padding-bottom: 29px;
+
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+
+  box-sizing: border-box;
+  transition: color 0.2s ease;
+
+  &--lamp {
+    background-color: $light-green;
+  }
+  &--toy {
+    background-color: $dark-green;
+  }
+}
+
+.promo__link-icon {
+  position: absolute;
+  fill: rgba(20, 144, 128, 0.5);
+  transition: fill 0.2s ease;
+  &--lamp {
+    top: 23px;
+    right: 36px;
+  }
+  &--toy {
+    top: 20px;
+    right: 26px;
+  }
+}
+
+.promo__link:hover .promo__link-icon {
+  fill: rgba(20, 144, 128, 0.7);
+}
+
+.promo__link:active {
+  color: rgba(255, 255, 255, 0.3);
+  .promo__link-icon {
+    fill: rgba(20, 144, 128, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    position: relative;
+    padding-top: 153px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: 50% 0;
+    background-size: 1150px auto;
+    @media (min-resolution: 144dpi),(min-resolution: 1.5dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
+  }
+
+  .promo::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 12px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: auto 0;
+    background-size: auto 24px;
+  }
+
+  .promo__wrapper {
+    width: auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+
+  .promo__title {
+    max-width: 520px;
+    margin-bottom: 361px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .promo__links {
+    flex-direction: row;
+    align-items: flex-end;
+    height: 130px;
+  }
+
+  .promo__link {
+    width: 50%;
+    padding: 29px 35px;
+
+    font-size: 20px;
+    line-height: 30px;
+    transition: all  0.2s ease;
+
+  }
+
+  .promo__link-icon {
+    &--lamp {
+      top: 30px;
+      right: 36px;
+    }
+    &--toy {
+      top: 32px;
+      right: 32px;
+    }
+  }
+
+  .promo__link:hover {
+    padding-bottom: 34px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-position: 50% 0;
+    background-size: 1250px 746px;
+    @media (min-resolution: 144dpi),(min-resolution: 1.5dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
+  }
+
+  .promo::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 17px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: auto 0;
+    background-size: auto 34px;
+  }
+
+  .promo__wrapper {
+    max-width: 1150px;
+    margin: 0 auto;   
+  }
+
+  .promo__title {
+    max-width: 615px;
+    margin-bottom: 347px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+

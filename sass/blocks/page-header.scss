@@ -1,0 +1,12 @@
+.page-header {
+  width: auto;
+  min-height: 79px;
+  background-color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    min-width: 88px;
+    border-bottom: 1px solid #ececec;
+  }
+}

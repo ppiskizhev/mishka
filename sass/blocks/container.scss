@@ -1,0 +1,11 @@
+.container {
+  width: 100%;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    padding: 0 50px;
+  }
+}

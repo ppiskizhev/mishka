@@ -1,0 +1,32 @@
+.social-link {
+  width: auto;
+
+  svg {
+    display: block;
+    margin: 0 auto;
+    transition: all 0.2s ease;
+  }
+
+  &--insta {
+    margin-left: auto;
+  }
+  &--twitter {
+    margin-right: auto;
+  }
+  &--facebook {
+    margin-left: 41px;
+    margin-right: 39px;
+  }
+}
+
+.social-link:hover {
+  svg {
+    fill: $dark-green;
+  }
+}
+
+.social-link:active {
+  svg {
+    fill: rgba($color: $dark-green, $alpha: 0.3);
+  }
+}
