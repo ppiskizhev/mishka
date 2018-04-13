@@ -1,0 +1,26 @@
+.catalog-items {
+  width: auto;
+}
+
+.catalog-items__wrapper {
+  display: flex;
+  padding-top: 30px;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-items__wrapper {
+    padding-top: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-items__wrapper {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding-top: 110px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
