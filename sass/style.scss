@@ -16,7 +16,10 @@
 @import "blocks/catalog-items.scss";
 @import "blocks/catalog-item.scss";
 @import "blocks/promo-video.scss";
+@import "blocks/form.scss";
+@import "blocks/product-type.scss";
+@import "blocks/color.scss";
 
 body {
-    // max-width: 1150px;  
+    max-width: 320px;  
 }   

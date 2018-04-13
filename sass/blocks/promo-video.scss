@@ -1,5 +1,6 @@
 .promo-video {
   width: auto;
+  margin-bottom: 58px;
 }
 
 .promo-video__item {
@@ -96,6 +97,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .promo-video {
+    margin-bottom: 63px;
+  }
+
   .promo-video__title {
     font-size: 20px;
     padding-top: 37px;
@@ -111,6 +116,7 @@
 
   .promo-video__descr {
     padding: 10px 40px;
+    padding-bottom: 45px;
     order: 3;
     border-top-style: none;
 
@@ -125,6 +131,7 @@
 @media (min-width: $desktop-width) {
   .promo-video {
     margin-top: 3px;
+    margin-bottom: 105px;
   }
 
   .promo-video__item {
