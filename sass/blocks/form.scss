@@ -48,6 +48,48 @@
   box-sizing: border-box;
 }
 
+.form textarea,
+.form input {
+  outline: none;
+}
+
+ .form input,
+ .form textarea {
+  &::-webkit-input-placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: rgba($color: $grey, $alpha: 0.3);
+  }
+  &:-ms-input-placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: rgba($color: $grey, $alpha: 0.3);
+  }
+}
+
+.form__submit {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 60px;
+  flex-direction: column;
+}
+
+.form__required {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.form__submit-btn {
+  width: 100%;
+}
+
 @media (min-width: $tablet-width) {
   .form-intro {
     padding: 0 50px;
@@ -74,18 +116,80 @@
       display: none;
     }
   }
+
+ .form input,
+ .form textarea {
+    &::-webkit-input-placeholder {
+      font-size: 19px;
+      line-height: 24px;
+      font-weight: 400;
+      font-family: "Open Sans", "Arial", sans-serif;
+      color: rgba($color: $grey, $alpha: 0.3);
+    }
+    &:-ms-input-placeholder {
+      font-size: 19px;
+      line-height: 24px;
+      font-weight: 400;
+      font-family: "Open Sans", "Arial", sans-serif;
+      color: rgba($color: $grey, $alpha: 0.3);
+    }
+  }
+
+  .form__submit {
+    display: flex;
+    margin-top: 52px;
+    margin-bottom: 35px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  .form__required {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: right;
+    order: 2;
+  }
+  
+  .form__submit-btn {
+    width: 230px;
+    order: 1;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .form-intro {
-    max-width: 700px;
+    width: 1150px;
+    margin: 0 auto;
+    margin-bottom: 22px;
     padding-left: 225px;
+    padding-right: 225px;
     padding-top: 102px;
+    box-sizing: border-box;
+  }
+
+  .form__item-wrapper {
+    max-width: 1150px;
+    margin: 0 auto;
   }
   
   .form__item-title {
     width: 175px;
     text-align: center;
+  }
+
+  .form__submit {
+    display: flex;
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-top: 52px;
+    margin-bottom: 30px;
+    padding: 0 225px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
   }
 }
 

@@ -1,0 +1,152 @@
+.connection {
+  width: auto;
+  padding-top: 5px;
+}
+
+.connection__label {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $light-green;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 62px;
+    right: 0;
+    height: 1px;
+    background-color: $light-green;
+  }
+
+  &--mail::before {
+    left: 81px;
+  }
+}
+
+.connection__item {
+  position: relative;
+  margin-bottom: 30px;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.connection__item input {
+  width: 100%;
+  padding: 15px 0;
+  padding-right: 45px;
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 19px;
+  border-style: none;
+  border-bottom: 2px solid #000000;
+  outline: none;
+  background-color: transparent;
+  box-sizing: border-box;
+
+  &:hover {
+    border-color: $light-green;
+    & ~ .connection__icon {
+      fill: $light-green;
+    }
+  }
+
+  &:focus {
+    border-color: $light-green;
+    & ~ .connection__icon {
+      fill: $light-green;
+    }
+  }
+}
+
+.connection__icon {
+  position: absolute;
+  fill: rgba($color: #000000, $alpha: 0.2);
+  &--tel {
+    bottom: 17px;
+    right: 8px;
+  }
+  &--mail {
+    bottom: 10px;
+    right: 4px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .connection {
+    margin-top: 27px;
+    padding: 50px 0;
+    background-color: #f1f1f1;
+  }
+
+  .connection__item {
+    display: flex;
+    margin-bottom: 27px;
+    align-items: baseline;
+  }
+
+  .connection__label {
+    width: 25%;
+    &::before {
+      display: none;
+    }
+  }
+
+  .connection__item input {
+    width: 75%;
+    padding-left: 18px;
+    box-sizing: border-box;
+  }
+
+  .connection__icon {
+    &--tel {
+      bottom: 17px;
+      right: 26px;
+    }
+    &--mail {
+      bottom: 10px;
+      right: 22px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .connection__item {
+    width: 875px;
+  }
+
+  .connection__wrapper {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
+  .connection__label {
+    width: 175px;
+    padding-left: 62px;
+    box-sizing: border-box;
+  }
+
+  .connection__item input {
+    width: 700px;
+    padding-left: 18px;
+    box-sizing: border-box;
+  }
+
+  .connection__icon {
+    &--tel {
+      bottom: 17px;
+      right: 8px;
+    }
+    &--mail {
+      bottom: 10px;
+      right: 4px;
+    }
+  }
+}
+

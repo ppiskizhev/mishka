@@ -49,6 +49,16 @@
     text-decoration: none;
     color: $grey;
     border-bottom: 1px solid #62d1ba;
+    transition: all 0.2s ease;
+  }
+
+  a:hover {
+    color: $dark-green;
+    border-color: currentColor;
+  }
+  a:active {
+    color: rgba($color: $dark-green, $alpha: 0.3);
+    border-color: currentColor;
   }
 }
 
