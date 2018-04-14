@@ -72,3 +72,10 @@ img {
     color: rgba(255, 255, 255, 0.3);
   }
 }
+
+button,
+input,
+a,
+label {
+  -webkit-tap-highlight-color: transparent;
+}
