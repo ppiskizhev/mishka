@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <script src="js/picturefill.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
   <div style="display:none">
@@ -148,11 +149,29 @@
       <h2 class="visually-hidden">Отзывы о нас:</h2>
       <div class="reviews__wrapper container">
         <h2 class="reviews__title">Отзывы</h2>
-        <p class="reviews__comment">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-        <p class="reviews__author-name">
-          Анастасия Красильникова<br> 
-          <span class="reviews__nickname">@misssssiskras</span>
-        </p>
+        <ul class="reviews__slider">
+          <li class="reviews_item">
+            <p class="reviews__comment">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <p class="reviews__author-name">
+              Анастасия Красильникова<br> 
+              <span class="reviews__nickname">@misssssiskras</span>
+            </p>
+          </li>
+          <li class="reviews_item"  style = "display: none;">
+            <p class="reviews__comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="reviews__author-name">
+              Анастасия Красильникова<br> 
+              <span class="reviews__nickname">@misssssiskras</span>
+            </p>
+          </li>
+          <li class="reviews_item"  style = "display: none;">
+            <p class="reviews__comment"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="reviews__author-name">
+              Анастасия Красильникова<br> 
+              <span class="reviews__nickname">@misssssiskras</span>
+            </p>
+          </li>
+        </ul>
         <div class="reviews__arrows">
           <button class="reviews__btn reviews__btn--left" type="button"><span class="visually-hidden">Назад</span></button>
           <button class="reviews__btn reviews__btn--right" type="button"><span class="visually-hidden">Вперед</span></button>
@@ -179,7 +198,6 @@
           </p>
         </div>
         <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123807!2d30.320894615855657!3d59.938796869048204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523295989161" width="320" height="457" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <a class="contacts__btn  btn" href="#">Напишите нам</a>
       </div>

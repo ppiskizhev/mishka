@@ -14,3 +14,58 @@ function openMenu() {
   }
 }
 
+//reviews
+var reviewsItems = document.querySelectorAll('.reviews_item');
+var currentItem = 0;
+var btnLeft = document.querySelector('.reviews__btn--left');
+var btnRight = document.querySelector('.reviews__btn--right');
+checkBtnState(currentItem);
+btnLeft.onclick = function(e) {
+  if (currentItem == 0) return;
+  reviewsItems[currentItem].style.display = 'none';
+  currentItem--;
+  reviewsItems[currentItem].style.display = 'block';
+  checkBtnState(currentItem);
+}
+btnRight.onclick = function(e) {
+  if (currentItem == reviewsItems.length - 1) return;
+  reviewsItems[currentItem].style.display = 'none';
+  currentItem++;
+  reviewsItems[currentItem].style.display = 'block';
+  checkBtnState(currentItem);
+}
+
+function checkBtnState(currentItem) {
+  if (currentItem == 0) {
+    btnLeft.disabled = true;
+  } else {
+    btnLeft.disabled = false;
+  }
+  if (currentItem == reviewsItems.length - 1) {
+    btnRight.disabled = true;
+  } else {
+    btnRight.disabled = false;
+  }
+}
+
+//map
+ymaps.ready(init);
+var myMap, 
+    myPlacemark;
+
+function init() { 
+  myMap = new ymaps.Map(document.querySelector('.contacts__map'), {
+      center: [59.938631, 30.323055],
+      zoom: 16,
+      controls: []
+  });
+
+  myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {}, {
+    iconLayout: 'default#image',
+    iconImageHref: '../img/icon-map-pin.svg',
+    iconImageSize: [66, 101],
+    iconImageOffset: [-35, -100]
+  });
+
+myMap.geoObjects.add(myPlacemark);
+}

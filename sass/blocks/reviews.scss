@@ -24,6 +24,10 @@
   flex-direction: column;
 }
 
+.reviews__slider {
+  @include list-style-reset;
+}
+
 .reviews__title {
   margin: 0;
   margin-bottom: 9px;
@@ -31,6 +35,10 @@
   line-height: 30px;
   font-weight: 700;
   color: #000000;
+}
+
+.reviews_item {
+  min-height: 218px;
 }
 
 .reviews__comment {
@@ -96,6 +104,11 @@
   }
   &:active {
     opacity: 0.3;
+  }
+
+  &[disabled] {
+    opacity: 0.3;
+    cursor: default;
   }
   
 }
@@ -189,6 +202,10 @@
     margin-bottom: 34px;
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .reviews_item {
+    min-height: 166px;
   }
 
   .reviews__comment {

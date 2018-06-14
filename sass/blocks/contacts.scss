@@ -72,10 +72,7 @@
 
 .contacts__map {
   width: 100%;
-  iframe {
-    display: block;
-    width: 100%;
-  }
+  height: 457px;
 }
 
 @media (min-width: $tablet-width) {
